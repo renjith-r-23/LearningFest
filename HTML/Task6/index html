@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webpage with Image and Video Embedded</title>
+</head>
+<body>
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersafari.com%2Fw%2FRXbsAl&psig=AOvVaw1CFiKWy-wgIwtycjN1eSGr&ust=1696506471387000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNDwsJ6p3IEDFQAAAAAdAAAAABAJ">
+
+  <iframe src="https://www.youtube.com/embed/example_video_id" title="Experiencing Plaid" width="560" height="315"></iframe>
+</body>
+</html>
