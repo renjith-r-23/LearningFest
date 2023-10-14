@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./pc.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif; 
+  }
+  .f{
+    background-color: white;
+    width: 270px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+  }
+  .i{
+    background-color: #f1f1f1;
+    border: none;
+    width: 266px;
+    border-radius: 10px;
+  }
+  h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 17px;
+    border-bottom: 2px solid grey; 
+    padding-bottom: 10px; 
+  }
+  
+  .b{
+    background-color: #373b3e;
+    margin-bottom: 10px;
+    margin-top: 33px;
+    width: 266px;
+    color: white;
+  }
+  .main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
