@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url('./pc.png');
+    background-image: url('pc.png');
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
