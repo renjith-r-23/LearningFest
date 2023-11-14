@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul{
+      font-size: large;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Person Data</h1>
+  <ul id="personList"></ul>
+
+  <script>
+      fetch('persons1.json')
+          .then(response => response.json())
+          .then(data => {
+              const personList = document.getElementById('personList');
+
+              data.forEach(person => {
+                  const listItem = document.createElement('li');
+                  listItem.textContent = `Name: ${person.name},Age: ${person.age},  Place: ${person.place},  DOB: ${person.dob}`;
+                  personList.appendChild(listItem);
+              });
+          })
+          .catch(error => {
+              console.error('Error fetching or parsing JSON:', error);
+          });
+  </script>
+</body>
+</html>

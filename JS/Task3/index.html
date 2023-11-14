@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="block">
+    <h2>EMI CALCULATOR</h2>
+    <form>
+        <label for="rate">Enter the rate of interest:</label><br>
+        <input type="number" id="rate" name="rate"><br>
+        <label for="principal">Enter the Principal Amount:</label><br>
+        <input type="number" id="principal" name="principal"><br>
+        <label for="tenure">Enter the loan tenure:</label><br>
+        <input type="number" id="tenure" name="tenure"><br>
+        <button onclick="emi(); return false;">Submit</button>
+    </form>
+    <p>The Calculated EMI is:</p>
+    <p id="op"></p>
+</div>
+
+    <script>
+        function emi() {
+            var r = Number(document.getElementById("rate").value);
+            var p = Number(document.getElementById("principal").value);
+            var n = Number(document.getElementById("tenure").value);
+            var emi = (p * r * (Math.pow(1 + r, n)) / (Math.pow(1+r, n)-1));
+            console.log(emi);
+            document.getElementById("op").innerHTML = "EMI: " + emi.toFixed(2);
+        }
+    </script>
+</body>
+</html>

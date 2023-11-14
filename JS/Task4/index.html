@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="block">
+    <h2>Enter your details</h2>
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name">
+        <span id="nameError" class="error"></span><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email">
+        <span id="emailError" class="error"></span><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            document.getElementById("nameError").innerHTML = "";
+            document.getElementById("emailError").innerHTML = "";
+            var isValid = true;
+
+            if (name.trim() === "") {
+                document.getElementById("nameError").innerHTML = "Name is required.";
+                isValid = false;
+            }
+
+            if (email.trim() === "") {
+                document.getElementById("emailError").innerHTML = "Email is required.";
+                isValid = false;
+            } else if (!isValidEmail(email)) {
+                document.getElementById("emailError").innerHTML = "Invalid email format.";
+                isValid = false;
+            }
+            return isValid;
+        }
+
+        function isValidEmail(email) {
+            var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+</html>

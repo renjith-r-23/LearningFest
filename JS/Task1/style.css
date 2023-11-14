@@ -1,0 +1,42 @@
+body{
+  background-color: floralwhite;
+}
+
+.dice {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 25rem;
+    margin-top: 25rem;
+    background-color: white;
+}
+
+.die {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.dot {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    display: none;
+    padding: 4px;
+}
+
+.b{
+  margin-left: 25rem;
+  width: 13.2rem;
+  height: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  
+}

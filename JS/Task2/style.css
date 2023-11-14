@@ -1,0 +1,26 @@
+body {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.block {
+    border: 5px solid black;
+    margin: auto;
+    width: 10%;
+    height: 50%;
+}
+
+h2, button, p, input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0; 
+}
+
+button {
+    height: 30px; 
+}
+
+

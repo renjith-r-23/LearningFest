@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Enter the two numbers:</h2>
+    <input type="number" id="input1">
+    <input type="number" id="input2">
+    <button onclick="sum()">ADD</button>
+    <div class="block">
+        <p id="num"></p>
+    
+    <p>The Sum is:</p>
+    <p id="op"></p>
+</div>
+</body>
+
+<script>
+    function sum(){
+        var x=Number(document.getElementById("input1").value)
+        var y=Number(document.getElementById("input2").value)
+        var sum= x+y
+        document.getElementById("op").innerHTML=sum
+    }
+
+
+</script>
+</html>
