@@ -25,7 +25,7 @@ body{
 .dot {
     width: 40px;
     height: 40px;
-    background-color: red;
+    background-color: violet;
     border-radius: 50%;
     display: none;
     padding: 4px;
